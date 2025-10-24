@@ -7,7 +7,7 @@ import { setAllAppState, setCardState } from "../../store";
 import { SOCKET_API } from "../../store/api/api.config";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { ApiResponseHandle, updatePaymentActivity } from "../../utils/helper";
-import { XpressSocket } from "../../utils/socket";
+import { OliveSocket } from "../../utils/socket";
 import successIcon from "../../assets/images/success-check.png";
 
 export const MasterCardInternationalPaymentFrame = () => {
@@ -21,7 +21,7 @@ export const MasterCardInternationalPaymentFrame = () => {
     return state.app;
   });
 
-  const socket = new XpressSocket(SOCKET_API);
+  const socket = new OliveSocket(SOCKET_API);
 
   useEffect(() => {
     const form = document.getElementById(

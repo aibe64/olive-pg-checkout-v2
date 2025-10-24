@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { setAllTransferState } from "../store/slice/transfer.slice";
 import { ApiResponseHandle, updatePaymentActivity } from "../utils/helper";
 import { SOCKET_API, useLazyGetDataQuery } from "../store/api/api.config";
-import { XpressSocket } from "../utils/socket";
+import { OliveSocket } from "../utils/socket";
 import { endpoints } from "../store/endpoints";
 
 const useTransferProgress = () => {
@@ -17,7 +17,7 @@ const useTransferProgress = () => {
   const transfer = useAppSelector((state) => {
     return state.transfer;
   });
-  const socket = new XpressSocket(SOCKET_API);
+  const socket = new OliveSocket(SOCKET_API);
 
   const totalTime = 1800;
   const [timeRemaining, setTimeRemaining] = useState(totalTime);

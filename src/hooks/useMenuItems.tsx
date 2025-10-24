@@ -44,7 +44,7 @@ const useMenuItems = (): CustomMenuItem[] => {
                   <div className="flex gap-2 items-center">
                     <img src={Payxpress} alt="" />
                     <div className="flex justify-between items-center">
-                      Xpress Wallet{" "}
+                      Olive Wallet{" "}
                       {state.menuKey === "6" && (
                         <img src={check} alt="" className="hidden" />
                       )}
@@ -231,7 +231,7 @@ const useMenuItems = (): CustomMenuItem[] => {
   //       <div className="flex gap-2 items-center">
   //         <img src={Payxpress} alt="" />
   //         <div className="flex justify-between items-center">
-  //           Xpress Wallet{" "}
+  //           Olive Wallet{" "}
   //           {state.menuKey === "6" && (
   //             <img src={check} alt="" className="hidden" />
   //           )}

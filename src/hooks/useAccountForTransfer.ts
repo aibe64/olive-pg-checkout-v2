@@ -3,7 +3,7 @@ import { ResponseCode } from "../models/application/enum";
 import { TransferVerificationResponse } from "../models/client/response";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { setAllTransferState } from "../store/slice/transfer.slice";
-import { XpressSocket } from "../utils/socket";
+import { OliveSocket } from "../utils/socket";
 import { ApiResponseHandle, updatePaymentActivity } from "../utils/helper";
 import useAmountFormatter from "./useAmountFormatter";
 import useTimer from "./useTimer";
@@ -45,7 +45,7 @@ const useAccountForTransfer = () => {
     }
   }, [copyText]);
 
-  const socket = new XpressSocket(SOCKET_API);
+  const socket = new OliveSocket(SOCKET_API);
 
   useEffect(() => {
     socket.receiveNotification((message) => {

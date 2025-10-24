@@ -24,7 +24,7 @@ export const LazyLoader = () => {
       <div className="flex gap-2 items-center">
         <img src={logo} className="w-[40px]" alt="" />
         <span className="font-semibold text-[30px] text-[#0a6a15]">
-          Xpress<span className="text-[#e66c17]">Pay</span>
+          Olive<span className="text-[#e66c17]">Pay</span>
         </span>
       </div>
       <Progress

@@ -20,7 +20,7 @@ import {
   generateBadRequestErrorMessage,
   updatePaymentActivity,
 } from "../utils/helper";
-import { XpressSocket } from "../utils/socket";
+import { OliveSocket } from "../utils/socket";
 
 export const useNqr = () => {
   const dispatch = useAppDispatch();
@@ -34,7 +34,7 @@ export const useNqr = () => {
   const [reValidatePayment] = useLazyGetDataQuery();
   const [timeLeft, setTimeLeft] = useState(15 * 60); // 15 minutes in seconds
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const socket = new XpressSocket(SOCKET_API);
+  const socket = new OliveSocket(SOCKET_API);
 
   const initiateNqr = useCallback(async () => {
     const request = {

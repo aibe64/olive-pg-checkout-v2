@@ -8,7 +8,7 @@ import {
 import { endpoints } from "../store/endpoints";
 import { Encryption } from "./encryption";
 
-export class XpressSocket {
+export class OliveSocket {
   private connection: HubConnection;
   private notificationCallback?: (message: string) => void;
 

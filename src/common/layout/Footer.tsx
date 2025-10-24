@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
           } text-center tracking-wide text-[11px]`}
         >
           {app.paymentInfo?.customization?.footerText ??
-            "Xpress Payment Solutions Limited"}
+            "Olive Payment Solutions Limited"}
         </a>
         <img
           src={

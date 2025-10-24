@@ -7,7 +7,7 @@ import { ApiResponseHandle, formatTime, updatePaymentActivity } from "../../util
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { CheckOutlined } from "@ant-design/icons";
 import { ResponseCode } from "../../models/application/enum";
-import { XpressSocket } from "../../utils/socket";
+import { OliveSocket } from "../../utils/socket";
 import { SOCKET_API } from "../../store/api/api.config";
 import { TransferVerificationResponse } from "../../models/client/response";
 import { setAppState } from "../../store";
@@ -29,7 +29,7 @@ const GetUSSDCode: React.FC = () => {
     // verifyPaymentResult,
   } = useUSSD();
 
-  const socket = new XpressSocket(SOCKET_API);
+  const socket = new OliveSocket(SOCKET_API);
 
   useEffect(() => {
     socket.receiveNotification((message) => {

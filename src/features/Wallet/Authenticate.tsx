@@ -15,12 +15,12 @@ export const WalletAuthentication = () => {
   } = useWallet();
   return (
     <div className="flex flex-col justify-center items-center gap-2">
-      <img src={payxpressIcon} alt="PayXpress Logo" className="w-[9rem]" />
+      <img src={payxpressIcon} alt="PayOlive Logo" className="w-[9rem]" />
       {isLoginError && (
         <Alert message={errorMessage} type="error" showIcon closable />
       )}
       <span className="text-center text-sm text-gray-600">
-        Log in to your PayXpress account to continue with your wallet payment.
+        Log in to your PayOlive account to continue with your wallet payment.
         Enter your account details below and click <b>Authenticate</b> to
         proceed.
       </span>
@@ -69,7 +69,7 @@ export const WalletAuthentication = () => {
         </Form.Item>
 
         <div className="text-center text-[12px] text-gray-500">
-          Don't have a PayXpress account?{" "}
+          Don't have a PayOlive account?{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"

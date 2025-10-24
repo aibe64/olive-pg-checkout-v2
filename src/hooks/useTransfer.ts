@@ -66,7 +66,7 @@ const useTransfer = (): TransferFunction => {
           bankCode: JSON.parse(request.bankCode).bankCode,
           transactionId: app.paymentInfo?.transactionId,
           paymentType: "Transfer",
-          firstName: "Xpress",
+          firstName: "Olive",
           lastName: "Payments",
           country: "Nigeria",
           currency: app.paymentInfo?.currency,

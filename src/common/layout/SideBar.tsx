@@ -188,7 +188,7 @@ const SideBar: React.FC = () => {
             } tracking-wide text-[11px] leading-4`}
           >
             {state.paymentInfo?.customization?.footerText ??
-              "Xpress Payment Solutions Limited"}
+              "Olive Payment Solutions Limited"}
           </a>
         </div>
       </div>
