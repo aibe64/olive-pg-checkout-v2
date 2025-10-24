@@ -73,7 +73,7 @@ export const WalletAuthentication = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href={import.meta.env.VITE_APP_PAYXPRESS_LOGIN}
+            href={import.meta.env.VITE_APP_WALLET_LOGIN}
             className="text-primary"
           >
             Register here
