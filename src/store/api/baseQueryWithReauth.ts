@@ -12,6 +12,7 @@ export const baseQueryWithReauth =
 export const baseQuery = fetchBaseQuery({
   baseUrl: import.meta.env.VITE_APP_API_BASE_URL,
   prepareHeaders: (headers, { getState }) => {
+    headers.set('ngrok-skip-browser-warning', 'true')
     const token = (() => {
       const state = getState() as RootState
       try {
