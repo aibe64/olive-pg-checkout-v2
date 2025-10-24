@@ -28,6 +28,7 @@ const usePaymentInfo = (): PaymentInfoFunction => {
         const response = await getPaymentInfo({
           getUrl: endpoints.getPaymentInfo + accessCode,
         });
+        
         if (response.data) {
           const apiResponse: API<PaymentInfo> = response.data;
           if (apiResponse?.responseCode === ResponseCode.ALREADY_STARTED) {

@@ -48,7 +48,6 @@ export const verificationConfig = createApi({
 export const API_BASE_URL = import.meta.env.VITE_APP_API_BASE_URL;
 export const SOCKET_API = import.meta.env.VITE_APP_SOCKET_API;
 
-export const { useGetDataQuery, useLazyGetDataQuery, useMutateDataMutation } =
-  apiConfig;
+export const { useGetDataQuery, useLazyGetDataQuery, useMutateDataMutation } = apiConfig;
 
 export const { useVerifyPaymentMutation } = verificationConfig;
