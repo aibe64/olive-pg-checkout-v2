@@ -1,0 +1,220 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "inter-bold";
+  src: url("./assets/fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: "inter-semibold";
+  src: url("./assets/fonts/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-family: "inter-medium";
+  src: url("./assets/fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: "inter-regular";
+  src: url("./assets/fonts/Inter-Regular.ttf");
+}
+
+html, body {
+  font-family: 'inter-regular';
+}
+
+.container {
+  background: url("./assets/images/pattern.png") #003200;
+}
+.custom-text-color {
+  color: var(--custom-text-color) !important;
+}
+.ant-otp-input {
+  width: 4.5rem;
+  height: 6rem;
+}
+
+.main-view {
+  height: calc(27rem - 5rem);
+}
+
+@media only screen and (max-width: 768px) {
+  .ant-otp-input {
+    width: 4rem;
+    height: 5rem;
+  }
+}
+
+.ant-checkbox-inner,
+.ant-checkbox-input {
+  border-radius: 100% !important;
+}
+
+.close {
+  transition: 500ms;
+}
+
+.ant-form-item .ant-form-item-label > label {
+  font-size: 12px !important;
+}
+
+.ant-menu-item-selected {
+  font-family: 'inter-semibold';
+  /* border-left: 2px solid #006f01!important; */
+  border-top-left-radius: 2px!important;
+  border-bottom-left-radius: 2px!important;
+}
+
+@media only screen and (min-width: 768px) {
+  .custom-menu .ant-menu-item-selected {
+    border-left: 2px solid var(--active-border-color) !important;
+  }
+}
+
+.loader {
+  border: 4px solid #E8E8E8;
+  border-top: 4px solid #FF6D00;
+  height: 2rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.card {
+  box-shadow: 0px 1px 4px 0px #0000000D;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.bg-img {
+  animation: bg-img 2s infinite alternate;
+  background: url("./assets/images/pattern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: calc(100vw + 10rem)
+}
+
+@keyframes bg-img {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.ant-form-item-explain-error {
+  font-size: 12px!important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eef2f8;
+  display: none;
+}
+ 
+::-webkit-scrollbar-track:hover {
+  display: block;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  display: none;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006f01;
+  border-radius: 12px;
+  display: block;
+}
+
+
+.custom-spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+
+  .ant-input-outlined:focus, .ant-input-outlined:focus-within {
+    box-shadow: none!important;
+  }
+
+  .loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite;
+  }
+  .loader::before,
+  .loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid #006f01;
+    animation: prixClipFix 2s linear infinite;
+  }
+  .loader::after {
+    border-color: #78d579;
+    animation: prixClipFix 2s linear infinite, rotate 0.5s linear infinite reverse;
+    inset: 6px;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes prixClipFix {
+    0% {
+      clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+    }
+    25% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+    }
+    50% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+    }
+    75% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+    }
+    100% {
+      clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+  }

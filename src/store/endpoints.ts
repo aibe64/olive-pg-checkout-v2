@@ -1,0 +1,23 @@
+export const endpoints = {
+  getPaymentInfo: "Payments/GetPaymentInfo/",
+  makePayment: "Payments/MakePayment",
+  saveCard: "Payments/SaveCard",
+  getUssdBanks: "Payments/GetUSSDBanks",
+  validatePayment: "Payments/ValidatePayment",
+  getBanksForPayment: "Payments/GetBanksForAccountPayment",
+  validateUserAccount: "Payments/ValidateUserAccount",
+  verifyPayment: "Payments/VerifyPayment",
+  getBanksForVirtualAccount: "Payments/GetBanksForVirtualAccount",
+  getSavedCards: "Payments/GetSaveCard/",
+  cardinalCallback: "Payments/CardinalCallBack/",
+  verifyBankRedirectPayment: "Payments/VerifyBankRedirectPayment/",
+  removeCard: "Payments/RemoveCard",
+  resendOtp: "Payments/ResendOtp",
+  GetPaymentInfoByTranId: "Payments/GetPaymentInfoByTransactionId/",
+  PaymentNotification: "NotificationHub",
+  ReceivePaymentNotification: "ReceivePaymentNotification",
+  UpdateUserActivities: "Payments/UpdateUserActivities",
+  ReValidatePayment: "Payments/Validate",
+  CloseTransaction: "Payments/Validate",
+  Login: "Payments/Login"
+}

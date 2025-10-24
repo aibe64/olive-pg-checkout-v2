@@ -1,0 +1,114 @@
+{
+   "Bin": [
+     {
+       "Id": 1,
+       "Name": "VISA",
+       "MinPanLength": 13,
+       "MaxPanLength": 19,
+       "BinRangeMinimum": 4,
+       "BinRangeMaximum": 4,
+       "BinImage": ""
+     },
+     {
+       "Id": 2,
+       "Name": "MASTERCARD",
+       "MinPanLength": 16,
+       "MaxPanLength": 16,
+       "BinRangeMinimum": 51,
+       "BinRangeMaximum": 55,
+       "BinImage": ""
+     },
+     {
+       "Id": 3,
+       "Name": "VERVE",
+       "MinPanLength": 16,
+       "MaxPanLength": 20,
+       "BinRangeMinimum": 506099,
+       "BinRangeMaximum": 650027,
+       "BinImage": ""
+     },
+     {
+       "Id": 4,
+       "Name": "MASTERCARD",
+       "MinPanLength": 13,
+       "MaxPanLength": 19,
+       "BinRangeMinimum": 2221,
+       "BinRangeMaximum": 2720,
+       "BinImage": ""
+     }
+   ],
+   "Int_Bin": [
+    {
+      "Id": 1,
+      "Name": "VISA",
+      "MinPanLength": 13,
+      "MaxPanLength": 19,
+      "BinRangeMinimum": 4,
+      "BinRangeMaximum": 4,
+      "BinImage": ""
+    },
+    {
+      "Id": 2,
+      "Name": "MASTERCARD",
+      "MinPanLength": 16,
+      "MaxPanLength": 16,
+      "BinRangeMinimum": 51,
+      "BinRangeMaximum": 55,
+      "BinImage": ""
+    },
+    {
+      "Id": 4,
+      "Name": "MASTERCARD",
+      "MinPanLength": 13,
+      "MaxPanLength": 19,
+      "BinRangeMinimum": 2221,
+      "BinRangeMaximum": 2720,
+      "BinImage": ""
+    },
+    {
+      "Id": 5,
+      "Name": "AMERICAN EXPRESS",
+      "MinPanLength": 15,
+      "MaxPanLength": 15,
+      "BinRangeMinimum": 34,
+      "BinRangeMaximum": 37,
+      "BinImage": ""
+    },
+    {
+      "Id": 6,
+      "Name": "DINERS CLUB",
+      "MinPanLength": 14,
+      "MaxPanLength": 14,
+      "BinRangeMinimum": 30,
+      "BinRangeMaximum": 36,
+      "BinImage": ""
+    },
+    {
+      "Id": 7,
+      "Name": "JCB",
+      "MinPanLength": 16,
+      "MaxPanLength": 19,
+      "BinRangeMinimum": 3528,
+      "BinRangeMaximum": 3589,
+      "BinImage": ""
+    },
+    {
+      "Id": 8,
+      "Name": "DISCOVER",
+      "MinPanLength": 16,
+      "MaxPanLength": 19,
+      "BinRangeMinimum": 6011,
+      "BinRangeMaximum": 6011,
+      "BinImage": ""
+    },
+    {
+      "Id": 9,
+      "Name": "MAESTRO",
+      "MinPanLength": 12,
+      "MaxPanLength": 19,
+      "BinRangeMinimum": 50,
+      "BinRangeMaximum": 56,
+      "BinImage": ""
+    }
+  ]
+ }
